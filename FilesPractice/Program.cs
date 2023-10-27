@@ -15,10 +15,7 @@
             }
 
             using (var f = File.OpenRead("f"))
-            using (var g = File.Create("g"))
-            using (var bw = new BinaryWriter(g))
-            using (var br = new BinaryReader(f))
-            {
+            using (var bw = new BinaryReader(f))
                 while (f.Position < f.Length)
                 {
                     var number = br.ReadInt32();
