@@ -217,36 +217,146 @@ namespace FilesPractice
 
 
 
+            // задача 8
+
+            //Console.WriteLine("Сколько чисел в файле?");
+            //int.TryParse(Console.ReadLine(), out int quantity);
+            //Random random = new Random();
+
+            //using (var n = File.Create("n"))
+            //using (var bw = new BinaryWriter(n))
+            //{
+            //    for (int i = 0; i < quantity; i++)
+            //        bw.Write(random.NextDouble() + random.Next(0, 10));
+            //}
+            //int proizved = 1;
+            //using (var n = File.OpenRead("n"))
+            //using (var br = new BinaryReader(n))
+            //using (var g = File.Create("g"))
+            //using (var bw = new BinaryWriter(g))
+            //    while (n.Position < n.Length)
+            //    { 
+            //        int number = br.ReadInt32();
+            //            proizved *= number;
+            //            bw.Write(proizved);
+            //        Console.WriteLine(proizved);
+            //}
 
 
 
+            // задача 9
 
-            // задача на распаковку картинки
+            //Random random = new Random();
 
-            using (var hot = File.OpenRead("hot.db"))
-            using (var br = new BinaryReader(hot))
-            {
-                string str = br.ReadString();
-                Console.WriteLine(str);
-                byte a = br.ReadByte();
-                Console.WriteLine(a);
+            //using (var n = File.Create("n"))
+            //using (var bw = new BinaryWriter(n))
+            //{
+            //    for (int i = 0; i < 100; i++)
+            //        bw.Write(random.NextDouble() + random.Next(0, 10));
+            //}
+            //using (var n = File.OpenRead("n"))
+            //using (var br = new BinaryReader(n))
+            //using (var g = File.Create("g"))
+            //using (var bw = new BinaryWriter(g))
+            //    while (n.Position < n.Length)
+            //    {
+            //        int number = br.ReadInt32();
+            //        if (number % K != 0)
+            //        {
+            //            bw.Write(number);
+            //        }
+            //        Console.WriteLine(g);
+            //    }
 
-                
-                string[] nameExts = new string[a];
-                List<byte> list = new List<byte>();
 
-                for (int i = 0; i < a; i++)
-                {
-                    
-                    string ext = br.ReadString();
-                    nameExts[i] = ext + ;
-                }
-                for (int i = 0; i < nameExts.Length; i++)
-                {
-                    int 
-                }
-            }
-            
+            // задача 10
+
+            //int count = 0;
+            //Random random = new Random();
+
+            //using (var f = File.Create("f"))
+            //using (var bw = new BinaryWriter(f))
+            //{
+            //    for (int i = 0; i < 100; i++)
+            //        bw.Write(random.NextDouble() + random.Next(0, 10));
+            //}
+            //using (var f = File.OpenRead("f"))
+            //using (var br = new BinaryReader(f))
+            //using (var g = File.Create("g"))
+            //using (var bw = new BinaryWriter(g))
+            //    while (f.Position < f.Length)
+            //    { 
+            //        int number = br.ReadInt32();
+            //        int nechet = number / 2;
+            //        if (nechet % 2 != 0)
+            //        { 
+            //            bw.Write(number);
+            //            count++;
+            //        }
+            //        Console.WriteLine($"Кол-во удвоенных нечетных чисел: {count}");
+            //    }
+
+
+            // задача 11
+
+            //int count = 0;
+            //Random random = new Random();
+
+            //using (var f = File.Create("f"))
+            //using (var bw = new BinaryWriter(f))
+            //{
+            //    for (int i = 0; i < 100; i++)
+            //        bw.Write(random.NextDouble() + random.Next(0, 10));
+            //}
+            //using (var f = File.OpenRead("f"))
+            //using (var br = new BinaryReader(f))
+            //using (var g = File.Create("g"))
+            //using (var bw = new BinaryWriter(g))
+            //    while (f.Position < f.Length)
+            //    {
+            //        int number = br.ReadInt32();
+            //        double nechet = Math.Sqrt(number);
+            //        if (nechet % 2 != 0)
+            //        {
+            //            bw.Write(number);
+            //            count++;
+            //        }
+            //        Console.WriteLine($"Кол-во удвоенных нечетных чисел: {count}");
+            //    }
+
+
+
+            // задача 12
+
+            //int max = int.MinValue;
+            //int j = 1;
+
+            //Random random = new Random();
+
+            //using (var f = File.Create("f"))
+            //using (var bw = new BinaryWriter(f))
+            //{
+            //    for (int i = 0; i < 100; i++)
+            //        bw.Write(random.NextDouble() + random.Next(0, 10));
+            //}
+            //using (var f = File.OpenRead("f"))
+            //using (var br = new BinaryReader(f))
+            //using (var g = File.Create("g"))
+            //using (var bw = new BinaryWriter(g))
+            //    while (f.Position < f.Length)
+            //    {
+            //        int number = br.ReadInt32();
+            //        if (j % 2 == 0)
+            //        { 
+            //            bw.Write(number);
+            //            if (number > max)
+            //            {
+            //                max = number;
+            //            }
+            //        }
+            //        j++;
+            //        Console.WriteLine($"Самое наибольшее из нечетных чисел: {number}");
+            //    }
         }
     }
 }
